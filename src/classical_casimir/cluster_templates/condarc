@@ -1,0 +1,12 @@
+channels:
+  - conda-forge
+channel_priority: strict
+envs_dirs:  #!final
+  - ${CONDA_ENVS_PATH}
+pkgs_dirs:  #!final
+  - ${CONDA_PKGS_DIRS}
+register_envs: false  #!final
+number_channel_notices: 0
+auto_activate_base: false
+auto_update_conda: false
+report_errors: false

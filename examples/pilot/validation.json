@@ -1,0 +1,1065 @@
+{
+  "accuracy_note": "Empirical finite-refinement evidence, not certified error bounds. No full separation sweep has been run.",
+  "checks": [
+    {
+      "detail": {
+        "momentum": [
+          7.628175435064888e-16,
+          7.260312509889382,
+          3.185385982762412e-16
+        ],
+        "stress": [
+          2.1510571102112408e-16,
+          7.260312509889423,
+          1.7763568394002505e-15
+        ]
+      },
+      "name": "dirichlet: analytic stress/momentum",
+      "passed": true
+    },
+    {
+      "detail": [
+        0.11690539400232876,
+        0.03174892421107063,
+        0.008102735472037022
+      ],
+      "name": "dirichlet: sphere convergence",
+      "passed": true
+    },
+    {
+      "detail": "Coarse pilot threshold only; measured errors, not this threshold, describe accuracy.",
+      "name": "dirichlet: normalization/sign",
+      "passed": true
+    },
+    {
+      "detail": {
+        "amplitude_error": 2.235162257882374e-15,
+        "boundary": "dirichlet",
+        "rotation_error": 4.967804987593805e-17,
+        "translation_error": 1.92327202500549e-15
+      },
+      "name": "dirichlet: invariances",
+      "passed": true
+    },
+    {
+      "detail": 1.8278357449830196e-07,
+      "name": "dirichlet: pair symmetry level 2",
+      "passed": true
+    },
+    {
+      "detail": 1.7846708111335374e-08,
+      "name": "dirichlet: pair symmetry level 3",
+      "passed": true
+    },
+    {
+      "detail": {
+        "momentum_discrepancies": [
+          0.3389291879772722,
+          0.08632890938839158
+        ],
+        "position_discrepancies": [
+          0.013497262729295967,
+          0.00318353216659073
+        ]
+      },
+      "name": "dirichlet: force-identity refinement",
+      "passed": true
+    },
+    {
+      "detail": 0.17202993740568434,
+      "name": "dirichlet: interior-resonance smoke",
+      "passed": true
+    },
+    {
+      "detail": {
+        "momentum": [
+          7.861312783467161e-17,
+          1.4877923506178234,
+          -1.463672932855431e-17
+        ],
+        "stress": [
+          -3.7470027081099033e-16,
+          1.4877923506178319,
+          2.220446049250313e-16
+        ]
+      },
+      "name": "neumann: analytic stress/momentum",
+      "passed": true
+    },
+    {
+      "detail": [
+        0.15358784821832816,
+        0.04179806974465126,
+        0.010748489276447577
+      ],
+      "name": "neumann: sphere convergence",
+      "passed": true
+    },
+    {
+      "detail": "Coarse pilot threshold only; measured errors, not this threshold, describe accuracy.",
+      "name": "neumann: normalization/sign",
+      "passed": true
+    },
+    {
+      "detail": {
+        "amplitude_error": 1.0490007718012309e-15,
+        "boundary": "neumann",
+        "rotation_error": 6.597121954190103e-16,
+        "translation_error": 1.3896114227239064e-15
+      },
+      "name": "neumann: invariances",
+      "passed": true
+    },
+    {
+      "detail": 1.1227112345357781e-07,
+      "name": "neumann: pair symmetry level 2",
+      "passed": true
+    },
+    {
+      "detail": 1.4810754567218254e-09,
+      "name": "neumann: pair symmetry level 3",
+      "passed": true
+    },
+    {
+      "detail": {
+        "momentum_discrepancies": [
+          0.011794022273731502,
+          0.0026117047105823875
+        ],
+        "position_discrepancies": [
+          0.0008112408172351315,
+          0.00021447561418025396
+        ]
+      },
+      "name": "neumann: force-identity refinement",
+      "passed": true
+    },
+    {
+      "detail": 0.11088585304644434,
+      "name": "neumann: interior-resonance smoke",
+      "passed": true
+    }
+  ],
+  "invariances": [
+    {
+      "amplitude_error": 2.235162257882374e-15,
+      "boundary": "dirichlet",
+      "rotation_error": 4.967804987593805e-17,
+      "translation_error": 1.92327202500549e-15
+    },
+    {
+      "amplitude_error": 1.0490007718012309e-15,
+      "boundary": "neumann",
+      "rotation_error": 6.597121954190103e-16,
+      "translation_error": 1.3896114227239064e-15
+    }
+  ],
+  "pairs": [
+    {
+      "boundary": "dirichlet",
+      "diagnostics": {
+        "assembly_seconds": 2.045906425000112,
+        "dofs": 640,
+        "elements": 640,
+        "estimated_peak_gib": 0.298828125,
+        "iterations": 12,
+        "mesh_sha256": "a49347b865a34a932f33bec898e2774a6c86a95c7db4debd7fd52c96f6aeaee1",
+        "regular_order": 4,
+        "relative_residual": 1.7849961353559938e-10,
+        "seconds": 2.050725866999983,
+        "singular_order": 4,
+        "solve_seconds": 0.004818880999891917,
+        "threads": {
+          "NUMBA_NUM_THREADS": "2",
+          "OMP_NUM_THREADS": "2",
+          "OPENBLAS_NUM_THREADS": "1"
+        },
+        "versions": {
+          "bempp-cl": "0.3.1",
+          "llvmlite": "0.43.0",
+          "matplotlib": "3.8.4",
+          "meshio": "5.3.5",
+          "numba": "0.60.0",
+          "numpy": "1.26.4",
+          "psutil": "5.9.0",
+          "pyyaml": "6.0.1",
+          "scipy": "1.14.1"
+        }
+      },
+      "forces": [
+        [
+          -1.7475968207050696,
+          8.726563906738235,
+          6.355380966112378e-08
+        ],
+        [
+          1.747596637921495,
+          8.726563890430755,
+          9.468758342982483e-08
+        ]
+      ],
+      "gap": 2.0,
+      "momentum": {
+        "angular_order": 20,
+        "extinction": 26.339408475080763,
+        "force": [
+          5.989860422765669e-09,
+          17.792056985146168,
+          -7.767187993473756e-09
+        ],
+        "optical_residual": 0.1187512296319575,
+        "scattering_integral": 26.220657245448805
+      },
+      "position": {
+        "angular_order": 20,
+        "coarse_force": [
+          1.7608654507576444,
+          null,
+          null
+        ],
+        "force": [
+          1.761093900650791,
+          null,
+          null
+        ],
+        "step": 0.02,
+        "step_difference": [
+          0.00022844989314663167,
+          null,
+          null
+        ]
+      },
+      "position_discrepancy": 0.013497262729295967,
+      "refinement": 2,
+      "separation_force": 1.7475967293132824,
+      "total_momentum_difference": 0.3389291879772722
+    },
+    {
+      "boundary": "dirichlet",
+      "diagnostics": {
+        "assembly_seconds": 11.566229694000185,
+        "dofs": 2560,
+        "elements": 2560,
+        "estimated_peak_gib": 1.03125,
+        "iterations": 11,
+        "mesh_sha256": "c0022f1e6a3b6caa0db41935417e3b869064c1db08ba16cf40b373d70dab72fa",
+        "regular_order": 4,
+        "relative_residual": 7.050273469546988e-10,
+        "seconds": 11.646743016000073,
+        "singular_order": 4,
+        "solve_seconds": 0.08051267699988784,
+        "threads": {
+          "NUMBA_NUM_THREADS": "2",
+          "OMP_NUM_THREADS": "2",
+          "OPENBLAS_NUM_THREADS": "1"
+        },
+        "versions": {
+          "bempp-cl": "0.3.1",
+          "llvmlite": "0.43.0",
+          "matplotlib": "3.8.4",
+          "meshio": "5.3.5",
+          "numba": "0.60.0",
+          "numpy": "1.26.4",
+          "psutil": "5.9.0",
+          "pyyaml": "6.0.1",
+          "scipy": "1.14.1"
+        }
+      },
+      "forces": [
+        [
+          -1.7496605216052887,
+          8.945719260506262,
+          7.749181454939219e-09
+        ],
+        [
+          1.7496605037585806,
+          8.945719250662055,
+          1.0585666470231021e-08
+        ]
+      ],
+      "gap": 2.0,
+      "momentum": {
+        "angular_order": 20,
+        "extinction": 26.712744442872424,
+        "force": [
+          -3.5041724767096577e-09,
+          17.977767420556706,
+          5.250711618970394e-10
+        ],
+        "optical_residual": 0.030672317001478433,
+        "scattering_integral": 26.682072125870945
+      },
+      "position": {
+        "angular_order": 20,
+        "coarse_force": [
+          1.7526197897002294,
+          null,
+          null
+        ],
+        "force": [
+          1.7528440359251714,
+          null,
+          null
+        ],
+        "step": 0.02,
+        "step_difference": [
+          0.00022424622494199298,
+          null,
+          null
+        ]
+      },
+      "position_discrepancy": 0.00318353216659073,
+      "quadrature_diagnostics": {
+        "assembly_seconds": 43.55101349300003,
+        "dofs": 2560,
+        "elements": 2560,
+        "estimated_peak_gib": 1.03125,
+        "iterations": 11,
+        "mesh_sha256": "c0022f1e6a3b6caa0db41935417e3b869064c1db08ba16cf40b373d70dab72fa",
+        "regular_order": 6,
+        "relative_residual": 2.0210331479115704e-10,
+        "seconds": 43.62510177499985,
+        "singular_order": 6,
+        "solve_seconds": 0.07408783399978347,
+        "threads": {
+          "NUMBA_NUM_THREADS": "2",
+          "OMP_NUM_THREADS": "2",
+          "OPENBLAS_NUM_THREADS": "1"
+        },
+        "versions": {
+          "bempp-cl": "0.3.1",
+          "llvmlite": "0.43.0",
+          "matplotlib": "3.8.4",
+          "meshio": "5.3.5",
+          "numba": "0.60.0",
+          "numpy": "1.26.4",
+          "psutil": "5.9.0",
+          "pyyaml": "6.0.1",
+          "scipy": "1.14.1"
+        }
+      },
+      "quadrature_force_difference": [
+        [
+          8.967749703048256e-06,
+          1.7455213418671178e-05,
+          7.640138663216056e-09
+        ],
+        [
+          8.985315608223132e-06,
+          1.746483126119358e-05,
+          1.043381186560232e-08
+        ]
+      ],
+      "refinement": 3,
+      "separation_force": 1.7496605126819347,
+      "total_momentum_difference": 0.08632890938839158
+    },
+    {
+      "boundary": "neumann",
+      "diagnostics": {
+        "assembly_seconds": 4.305135312999937,
+        "dofs": 324,
+        "elements": 640,
+        "estimated_peak_gib": 0.2625141143798828,
+        "iterations": 23,
+        "mesh_sha256": "a49347b865a34a932f33bec898e2774a6c86a95c7db4debd7fd52c96f6aeaee1",
+        "regular_order": 4,
+        "relative_residual": 7.661512805832068e-10,
+        "seconds": 4.313253750000058,
+        "singular_order": 4,
+        "solve_seconds": 0.008117686000105095,
+        "threads": {
+          "NUMBA_NUM_THREADS": "2",
+          "OMP_NUM_THREADS": "2",
+          "OPENBLAS_NUM_THREADS": "1"
+        },
+        "versions": {
+          "bempp-cl": "0.3.1",
+          "llvmlite": "0.43.0",
+          "matplotlib": "3.8.4",
+          "meshio": "5.3.5",
+          "numba": "0.60.0",
+          "numpy": "1.26.4",
+          "psutil": "5.9.0",
+          "pyyaml": "6.0.1",
+          "scipy": "1.14.1"
+        }
+      },
+      "forces": [
+        [
+          -0.1787533287143171,
+          1.3584390582948014,
+          -5.101119597474696e-08
+        ],
+        [
+          0.17875344098544055,
+          1.3584390598850373,
+          -5.233390544014116e-08
+        ]
+      ],
+      "gap": 2.0,
+      "momentum": {
+        "angular_order": 20,
+        "extinction": 1.7321823813992399,
+        "force": [
+          -1.6276957868566547e-09,
+          2.705084095907166,
+          6.2115302649698445e-09
+        ],
+        "optical_residual": -8.250217780592095e-05,
+        "scattering_integral": 1.7322648835770458
+      },
+      "position": {
+        "angular_order": 20,
+        "coarse_force": [
+          0.17955439482320237,
+          null,
+          null
+        ],
+        "force": [
+          0.17956468180267568,
+          null,
+          null
+        ],
+        "step": 0.02,
+        "step_difference": [
+          1.0286979473306257e-05,
+          null,
+          null
+        ]
+      },
+      "position_discrepancy": 0.0008112408172351315,
+      "refinement": 2,
+      "separation_force": 0.17875338484987882,
+      "total_momentum_difference": 0.011794022273731502
+    },
+    {
+      "boundary": "neumann",
+      "diagnostics": {
+        "assembly_seconds": 31.323345580000023,
+        "dofs": 1284,
+        "elements": 2560,
+        "estimated_peak_gib": 0.4465351104736328,
+        "iterations": 34,
+        "mesh_sha256": "c0022f1e6a3b6caa0db41935417e3b869064c1db08ba16cf40b373d70dab72fa",
+        "regular_order": 4,
+        "relative_residual": 7.247827583716251e-10,
+        "seconds": 31.385539504000008,
+        "singular_order": 4,
+        "solve_seconds": 0.062193375000106244,
+        "threads": {
+          "NUMBA_NUM_THREADS": "2",
+          "OMP_NUM_THREADS": "2",
+          "OPENBLAS_NUM_THREADS": "1"
+        },
+        "versions": {
+          "bempp-cl": "0.3.1",
+          "llvmlite": "0.43.0",
+          "matplotlib": "3.8.4",
+          "meshio": "5.3.5",
+          "numba": "0.60.0",
+          "numpy": "1.26.4",
+          "psutil": "5.9.0",
+          "pyyaml": "6.0.1",
+          "scipy": "1.14.1"
+        }
+      },
+      "forces": [
+        [
+          -0.18750432414438217,
+          1.4009437355245788,
+          -1.3398789225479643e-09
+        ],
+        [
+          0.18750432562545763,
+          1.4009437354590883,
+          -1.4593393942276614e-09
+        ]
+      ],
+      "gap": 2.0,
+      "momentum": {
+        "angular_order": 20,
+        "extinction": 1.795843972850667,
+        "force": [
+          -2.4259524158401144e-11,
+          2.7992757662730865,
+          -2.0981154313925998e-11
+        ],
+        "optical_residual": -2.9041839456622753e-05,
+        "scattering_integral": 1.7958730146901236
+      },
+      "position": {
+        "angular_order": 20,
+        "coarse_force": [
+          0.18770812415638136,
+          null,
+          null
+        ],
+        "force": [
+          0.18771880123963788,
+          null,
+          null
+        ],
+        "step": 0.02,
+        "step_difference": [
+          1.0677083256527276e-05,
+          null,
+          null
+        ]
+      },
+      "position_discrepancy": 0.00021447561418025396,
+      "quadrature_diagnostics": {
+        "assembly_seconds": 86.16921066700024,
+        "dofs": 1284,
+        "elements": 2560,
+        "estimated_peak_gib": 0.4465351104736328,
+        "iterations": 34,
+        "mesh_sha256": "c0022f1e6a3b6caa0db41935417e3b869064c1db08ba16cf40b373d70dab72fa",
+        "regular_order": 6,
+        "relative_residual": 7.249079539676574e-10,
+        "seconds": 86.23396863900007,
+        "singular_order": 6,
+        "solve_seconds": 0.06475747400008913,
+        "threads": {
+          "NUMBA_NUM_THREADS": "2",
+          "OMP_NUM_THREADS": "2",
+          "OPENBLAS_NUM_THREADS": "1"
+        },
+        "versions": {
+          "bempp-cl": "0.3.1",
+          "llvmlite": "0.43.0",
+          "matplotlib": "3.8.4",
+          "meshio": "5.3.5",
+          "numba": "0.60.0",
+          "numpy": "1.26.4",
+          "psutil": "5.9.0",
+          "pyyaml": "6.0.1",
+          "scipy": "1.14.1"
+        }
+      },
+      "quadrature_force_difference": [
+        [
+          6.970159166508338e-07,
+          3.496464894947593e-06,
+          1.3204077878824216e-09
+        ],
+        [
+          6.984577730906327e-07,
+          3.4963989605785173e-06,
+          1.4391853025074938e-09
+        ]
+      ],
+      "refinement": 3,
+      "separation_force": 0.18750432488491992,
+      "total_momentum_difference": 0.0026117047105823875
+    }
+  ],
+  "resonances": [
+    {
+      "boundary": "dirichlet",
+      "diagnostics": {
+        "assembly_seconds": 1.3771021260001817,
+        "dofs": 80,
+        "elements": 80,
+        "estimated_peak_gib": 0.250762939453125,
+        "iterations": 12,
+        "mesh_sha256": "c4af5de64ef9ca775eabad53894109c639484dbe583875c2718b36407449267c",
+        "regular_order": 4,
+        "relative_residual": 1.15850178925586e-10,
+        "seconds": 1.3786926140001015,
+        "singular_order": 4,
+        "solve_seconds": 0.0015901770000255055,
+        "threads": {
+          "NUMBA_NUM_THREADS": "2",
+          "OMP_NUM_THREADS": "2",
+          "OPENBLAS_NUM_THREADS": "1"
+        },
+        "versions": {
+          "bempp-cl": "0.3.1",
+          "llvmlite": "0.43.0",
+          "matplotlib": "3.8.4",
+          "meshio": "5.3.5",
+          "numba": "0.60.0",
+          "numpy": "1.26.4",
+          "psutil": "5.9.0",
+          "pyyaml": "6.0.1",
+          "scipy": "1.14.1"
+        }
+      },
+      "far_field_relative_error": 0.17202993740568434,
+      "k": 3.141592653589793
+    },
+    {
+      "boundary": "neumann",
+      "diagnostics": {
+        "assembly_seconds": 1.3427073790003305,
+        "dofs": 42,
+        "elements": 80,
+        "estimated_peak_gib": 0.2502102851867676,
+        "iterations": 12,
+        "mesh_sha256": "c4af5de64ef9ca775eabad53894109c639484dbe583875c2718b36407449267c",
+        "regular_order": 4,
+        "relative_residual": 9.272554298093114e-10,
+        "seconds": 1.3443772150003497,
+        "singular_order": 4,
+        "solve_seconds": 0.0016694659998393035,
+        "threads": {
+          "NUMBA_NUM_THREADS": "2",
+          "OMP_NUM_THREADS": "2",
+          "OPENBLAS_NUM_THREADS": "1"
+        },
+        "versions": {
+          "bempp-cl": "0.3.1",
+          "llvmlite": "0.43.0",
+          "matplotlib": "3.8.4",
+          "meshio": "5.3.5",
+          "numba": "0.60.0",
+          "numpy": "1.26.4",
+          "psutil": "5.9.0",
+          "pyyaml": "6.0.1",
+          "scipy": "1.14.1"
+        }
+      },
+      "far_field_relative_error": 0.11088585304644434,
+      "k": 2.0815759778181
+    }
+  ],
+  "schema_version": 1,
+  "scope": "Local pilot; full survey pending",
+  "seconds": 487.02432451799996,
+  "source_sha256": "8d706dca230ad02f5de655ac323b9b271ba154e2b834beacba703d3fabf62421",
+  "spheres": [
+    {
+      "angular_difference": 4.176110472081455e-16,
+      "boundary": "dirichlet",
+      "diagnostics": {
+        "assembly_seconds": 25.852062553000223,
+        "dofs": 80,
+        "elements": 80,
+        "estimated_peak_gib": 0.250762939453125,
+        "iterations": 9,
+        "mesh_sha256": "c4af5de64ef9ca775eabad53894109c639484dbe583875c2718b36407449267c",
+        "regular_order": 4,
+        "relative_residual": 1.4171471874561002e-10,
+        "seconds": 25.853308866000134,
+        "singular_order": 4,
+        "solve_seconds": 0.0012459009999474802,
+        "threads": {
+          "NUMBA_NUM_THREADS": "2",
+          "OMP_NUM_THREADS": "2",
+          "OPENBLAS_NUM_THREADS": "1"
+        },
+        "versions": {
+          "bempp-cl": "0.3.1",
+          "llvmlite": "0.43.0",
+          "matplotlib": "3.8.4",
+          "meshio": "5.3.5",
+          "numba": "0.60.0",
+          "numpy": "1.26.4",
+          "psutil": "5.9.0",
+          "pyyaml": "6.0.1",
+          "scipy": "1.14.1"
+        }
+      },
+      "exact_force": [
+        2.1510571102112408e-16,
+        7.260312509889423,
+        1.7763568394002505e-15
+      ],
+      "far_field_relative_error": 0.06672441080859469,
+      "force": [
+        -7.494005416219807e-16,
+        6.411542815340764,
+        -4.85722573273506e-17
+      ],
+      "force_relative_error": 0.11690539400232876,
+      "momentum": {
+        "angular_order": 12,
+        "extinction": 9.924774419402535,
+        "force": [
+          6.4813605871183455e-16,
+          6.977361511655733,
+          6.331740687315346e-17
+        ],
+        "optical_residual": 0.1924954028995849,
+        "scattering_integral": 9.73227901650295
+      },
+      "momentum_refined": {
+        "angular_order": 16,
+        "extinction": 9.924774419402535,
+        "force": [
+          2.316940042601523e-16,
+          6.977361511655733,
+          9.454242944073599e-17
+        ],
+        "optical_residual": 0.1924954028995831,
+        "scattering_integral": 9.732279016502952
+      },
+      "momentum_relative_error": 0.03897228911954913,
+      "near_field_relative_error": 0.06120329704653844,
+      "refinement": 1
+    },
+    {
+      "angular_difference": 3.582292964468551e-15,
+      "boundary": "dirichlet",
+      "diagnostics": {
+        "assembly_seconds": 1.5330710009998256,
+        "dofs": 320,
+        "elements": 320,
+        "estimated_peak_gib": 0.26220703125,
+        "iterations": 9,
+        "mesh_sha256": "c3ff2e24426f718d1466d88c3800fb5b084971d0c9877563b6e2727f0e37d5a3",
+        "regular_order": 4,
+        "relative_residual": 8.005985402059123e-10,
+        "seconds": 1.5349832319998313,
+        "singular_order": 4,
+        "solve_seconds": 0.0019118090001484234,
+        "threads": {
+          "NUMBA_NUM_THREADS": "2",
+          "OMP_NUM_THREADS": "2",
+          "OPENBLAS_NUM_THREADS": "1"
+        },
+        "versions": {
+          "bempp-cl": "0.3.1",
+          "llvmlite": "0.43.0",
+          "matplotlib": "3.8.4",
+          "meshio": "5.3.5",
+          "numba": "0.60.0",
+          "numpy": "1.26.4",
+          "psutil": "5.9.0",
+          "pyyaml": "6.0.1",
+          "scipy": "1.14.1"
+        }
+      },
+      "exact_force": [
+        2.1510571102112408e-16,
+        7.260312509889423,
+        1.7763568394002505e-15
+      ],
+      "far_field_relative_error": 0.01754869600936768,
+      "force": [
+        -6.282397085888292e-08,
+        7.029805398264271,
+        5.555803759150352e-08
+      ],
+      "force_relative_error": 0.03174892421107063,
+      "momentum": {
+        "angular_order": 12,
+        "extinction": 10.444253623960954,
+        "force": [
+          5.119081696947428e-09,
+          7.188173790116635,
+          -2.6578883382394336e-09
+        ],
+        "optical_residual": 0.05603441231173534,
+        "scattering_integral": 10.388219211649218
+      },
+      "momentum_refined": {
+        "angular_order": 16,
+        "extinction": 10.444253623960954,
+        "force": [
+          5.119081309724622e-09,
+          7.188173790116632,
+          -2.657888585437529e-09
+        ],
+        "optical_residual": 0.056034412311731785,
+        "scattering_integral": 10.388219211649222
+      },
+      "momentum_relative_error": 0.009936035077625988,
+      "near_field_relative_error": 0.016002174889288394,
+      "refinement": 2
+    },
+    {
+      "angular_difference": 2.6877854827781045e-15,
+      "boundary": "dirichlet",
+      "diagnostics": {
+        "assembly_seconds": 3.4788882049999756,
+        "dofs": 1280,
+        "elements": 1280,
+        "estimated_peak_gib": 0.4453125,
+        "iterations": 9,
+        "mesh_sha256": "2cb67e66ea329be81c40b69cc8ca527dd2584ff311ca3184b193e6d94304f46b",
+        "regular_order": 4,
+        "relative_residual": 3.4465152399458364e-10,
+        "seconds": 3.494997773000023,
+        "singular_order": 4,
+        "solve_seconds": 0.016108952999957182,
+        "threads": {
+          "NUMBA_NUM_THREADS": "2",
+          "OMP_NUM_THREADS": "2",
+          "OPENBLAS_NUM_THREADS": "1"
+        },
+        "versions": {
+          "bempp-cl": "0.3.1",
+          "llvmlite": "0.43.0",
+          "matplotlib": "3.8.4",
+          "meshio": "5.3.5",
+          "numba": "0.60.0",
+          "numpy": "1.26.4",
+          "psutil": "5.9.0",
+          "pyyaml": "6.0.1",
+          "scipy": "1.14.1"
+        }
+      },
+      "exact_force": [
+        2.1510571102112408e-16,
+        7.260312509889423,
+        1.7763568394002505e-15
+      ],
+      "far_field_relative_error": 0.004445235947418247,
+      "force": [
+        -5.7650278682819245e-09,
+        7.2014841181774685,
+        6.5141723390232595e-09
+      ],
+      "force_relative_error": 0.008102735472037022,
+      "momentum": {
+        "angular_order": 12,
+        "extinction": 10.58018310703904,
+        "force": [
+          -4.264558608590291e-10,
+          7.242037879930229,
+          1.4640206321553384e-10
+        ],
+        "optical_residual": 0.014481152075061843,
+        "scattering_integral": 10.565701954963979
+      },
+      "momentum_refined": {
+        "angular_order": 16,
+        "extinction": 10.58018310703904,
+        "force": [
+          -4.26456054443327e-10,
+          7.242037879930226,
+          1.4640235811852476e-10
+        ],
+        "optical_residual": 0.014481152075060066,
+        "scattering_integral": 10.56570195496398
+      },
+      "momentum_relative_error": 0.002517058313165142,
+      "near_field_relative_error": 0.004041929241943651,
+      "refinement": 3
+    },
+    {
+      "angular_difference": 4.459658003596932e-16,
+      "boundary": "neumann",
+      "diagnostics": {
+        "assembly_seconds": 30.858614848000116,
+        "dofs": 42,
+        "elements": 80,
+        "estimated_peak_gib": 0.2502102851867676,
+        "iterations": 12,
+        "mesh_sha256": "c4af5de64ef9ca775eabad53894109c639484dbe583875c2718b36407449267c",
+        "regular_order": 4,
+        "relative_residual": 3.2662113771225827e-10,
+        "seconds": 30.860956559000215,
+        "singular_order": 4,
+        "solve_seconds": 0.00234124000007796,
+        "threads": {
+          "NUMBA_NUM_THREADS": "2",
+          "OMP_NUM_THREADS": "2",
+          "OPENBLAS_NUM_THREADS": "1"
+        },
+        "versions": {
+          "bempp-cl": "0.3.1",
+          "llvmlite": "0.43.0",
+          "matplotlib": "3.8.4",
+          "meshio": "5.3.5",
+          "numba": "0.60.0",
+          "numpy": "1.26.4",
+          "psutil": "5.9.0",
+          "pyyaml": "6.0.1",
+          "scipy": "1.14.1"
+        }
+      },
+      "exact_force": [
+        -3.7470027081099033e-16,
+        1.4877923506178319,
+        2.220446049250313e-16
+      ],
+      "far_field_relative_error": 0.09882271994378805,
+      "force": [
+        1.8582460958871394e-08,
+        1.2592855248907515,
+        6.646225111928139e-09
+      ],
+      "force_relative_error": 0.15358784821832816,
+      "momentum": {
+        "angular_order": 12,
+        "extinction": 0.830896563025846,
+        "force": [
+          1.5187433822361337e-09,
+          1.2350915251503558,
+          -3.3424422395426576e-09
+        ],
+        "optical_residual": 0.0011034662704023646,
+        "scattering_integral": 0.8297930967554437
+      },
+      "momentum_refined": {
+        "angular_order": 16,
+        "extinction": 0.830896563025846,
+        "force": [
+          1.5187433455968766e-09,
+          1.2350915251503563,
+          -3.3424422214364813e-09
+        ],
+        "optical_residual": 0.0011034662704021425,
+        "scattering_integral": 0.8297930967554439
+      },
+      "momentum_relative_error": 0.16984952595201722,
+      "near_field_relative_error": 0.11924812947857652,
+      "refinement": 1
+    },
+    {
+      "angular_difference": 2.4582691236563515e-16,
+      "boundary": "neumann",
+      "diagnostics": {
+        "assembly_seconds": 2.215589293999983,
+        "dofs": 162,
+        "elements": 320,
+        "estimated_peak_gib": 0.2531285285949707,
+        "iterations": 19,
+        "mesh_sha256": "c3ff2e24426f718d1466d88c3800fb5b084971d0c9877563b6e2727f0e37d5a3",
+        "regular_order": 4,
+        "relative_residual": 5.286970725753975e-10,
+        "seconds": 2.220498877000182,
+        "singular_order": 4,
+        "solve_seconds": 0.0049091230000612995,
+        "threads": {
+          "NUMBA_NUM_THREADS": "2",
+          "OMP_NUM_THREADS": "2",
+          "OPENBLAS_NUM_THREADS": "1"
+        },
+        "versions": {
+          "bempp-cl": "0.3.1",
+          "llvmlite": "0.43.0",
+          "matplotlib": "3.8.4",
+          "meshio": "5.3.5",
+          "numba": "0.60.0",
+          "numpy": "1.26.4",
+          "psutil": "5.9.0",
+          "pyyaml": "6.0.1",
+          "scipy": "1.14.1"
+        }
+      },
+      "exact_force": [
+        -3.7470027081099033e-16,
+        1.4877923506178319,
+        2.220446049250313e-16
+      ],
+      "far_field_relative_error": 0.02576037008466872,
+      "force": [
+        5.2343841976110195e-08,
+        1.4256055021811913,
+        -5.009034814880409e-08
+      ],
+      "force_relative_error": 0.04179806974465126,
+      "momentum": {
+        "angular_order": 12,
+        "extinction": 0.9618392713326233,
+        "force": [
+          -3.331584794011907e-09,
+          1.4199138231277382,
+          2.9664342755201384e-09
+        ],
+        "optical_residual": -2.382442580850519e-05,
+        "scattering_integral": 0.9618630957584318
+      },
+      "momentum_refined": {
+        "angular_order": 16,
+        "extinction": 0.9618392713326233,
+        "force": [
+          -3.3315848310441873e-09,
+          1.4199138231277384,
+          2.9664341767493205e-09
+        ],
+        "optical_residual": -2.3824425808838257e-05,
+        "scattering_integral": 0.9618630957584321
+      },
+      "momentum_relative_error": 0.04562365672999064,
+      "near_field_relative_error": 0.031264130285834114,
+      "refinement": 2
+    },
+    {
+      "angular_difference": 4.46179685504412e-16,
+      "boundary": "neumann",
+      "diagnostics": {
+        "assembly_seconds": 9.773710888999858,
+        "dofs": 642,
+        "elements": 1280,
+        "estimated_peak_gib": 0.2991337776184082,
+        "iterations": 29,
+        "mesh_sha256": "2cb67e66ea329be81c40b69cc8ca527dd2584ff311ca3184b193e6d94304f46b",
+        "regular_order": 4,
+        "relative_residual": 2.2189142330290514e-10,
+        "seconds": 9.793299050999849,
+        "singular_order": 4,
+        "solve_seconds": 0.019587433999959103,
+        "threads": {
+          "NUMBA_NUM_THREADS": "2",
+          "OMP_NUM_THREADS": "2",
+          "OPENBLAS_NUM_THREADS": "1"
+        },
+        "versions": {
+          "bempp-cl": "0.3.1",
+          "llvmlite": "0.43.0",
+          "matplotlib": "3.8.4",
+          "meshio": "5.3.5",
+          "numba": "0.60.0",
+          "numpy": "1.26.4",
+          "psutil": "5.9.0",
+          "pyyaml": "6.0.1",
+          "scipy": "1.14.1"
+        }
+      },
+      "exact_force": [
+        -3.7470027081099033e-16,
+        1.4877923506178319,
+        2.220446049250313e-16
+      ],
+      "far_field_relative_error": 0.006501452963905852,
+      "force": [
+        6.316316514959341e-10,
+        1.4718008304916355,
+        -1.4267028141572505e-09
+      ],
+      "force_relative_error": 0.010748489276447577,
+      "momentum": {
+        "angular_order": 12,
+        "extinction": 0.998059730056709,
+        "force": [
+          -2.837039265080228e-11,
+          1.47053808632258,
+          -8.665202886823375e-12
+        ],
+        "optical_residual": -1.235548961353583e-05,
+        "scattering_integral": 0.9980720855463225
+      },
+      "momentum_refined": {
+        "angular_order": 16,
+        "extinction": 0.998059730056709,
+        "force": [
+          -2.8370429689859e-11,
+          1.4705380863225805,
+          -8.665225004547694e-12
+        ],
+        "optical_residual": -1.235548961397992e-05,
+        "scattering_integral": 0.998072085546323
+      },
+      "momentum_relative_error": 0.011597226110274495,
+      "near_field_relative_error": 0.007893003775681768,
+      "refinement": 3
+    }
+  ],
+  "status": "passed",
+  "versions": {
+    "bempp-cl": "0.3.1",
+    "llvmlite": "0.43.0",
+    "matplotlib": "3.8.4",
+    "meshio": "5.3.5",
+    "numba": "0.60.0",
+    "numpy": "1.26.4",
+    "psutil": "5.9.0",
+    "pyyaml": "6.0.1",
+    "scipy": "1.14.1"
+  }
+}

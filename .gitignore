@@ -1,0 +1,27 @@
+.venv/
+.cache/
+__pycache__/
+*.egg-info/
+.pytest_cache/
+tmp/
+build/
+dist/
+hpc-runs/
+output/
+reports/*.aux
+reports/*.log
+reports/*.out
+reports/*.toc
+reports/*.fls
+reports/*.fdb_latexmk
+
+
+configs/luis.local.json
+.env
+.env.*
+!.env.example
+*.bundle
+*.pem
+
+# Local account credentials
+cluster-credentials.txt

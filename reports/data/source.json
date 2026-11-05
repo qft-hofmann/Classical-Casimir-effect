@@ -1,0 +1,7 @@
+{
+  "validation": "examples/pilot/validation.json",
+  "budget": "examples/pilot/budget.json",
+  "source_sha256": "8d706dca230ad02f5de655ac323b9b271ba154e2b834beacba703d3fabf62421",
+  "mesh_size_definition": "h/a = maximum Euclidean triangle-edge length divided by sphere radius",
+  "mesh_size_annotation": "Derived from the unchanged sphere mesh family; no new BEM solves."
+}

@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "classical-casimir"
+version = "0.1.0"
+description = "Reproducible Helmholtz scattering and component radiation forces"
+readme = "README.md"
+license = {file = "LICENSE"}
+authors = [{name = "Arne Hofmann"}]
+requires-python = ">=3.12,<3.13"
+dependencies = [
+  "bempp-cl>=0.3.1,<=0.4.2", "numpy>=1.26.4,<2.2", "scipy>=1.14,<1.18",
+  "numba>=0.60,<0.62", "meshio>=5.3,<6", "matplotlib>=3.8,<4",
+  "pyyaml>=6,<7", "psutil>=5.9,<8",
+]
+
+[project.urls]
+Repository = "https://github.com/qft-hofmann/Classical-Casimir-effect"
+Documentation = "https://github.com/qft-hofmann/Classical-Casimir-effect#readme"
+
+[project.optional-dependencies]
+test = ["pytest>=8,<10"]
+
+[project.scripts]
+classical-casimir = "classical_casimir.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["classical_casimir*"]
+
+[tool.setuptools.package-data]
+classical_casimir = ["cluster_templates/*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["bem: actual BEM solves (run in a budgeted campaign)"]
+

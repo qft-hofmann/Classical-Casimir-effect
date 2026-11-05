@@ -1,0 +1,25 @@
+{
+  "source_sha256": "8d706dca230ad02f5de655ac323b9b271ba154e2b834beacba703d3fabf62421",
+  "files": {
+    "__init__.py": "24988fafbba0b5a913419938006c76cb007724ae71c9e574c5e86b4b9caa1ad4",
+    "__main__.py": "76fa916e93e0ae1a6c1bb51dcc0bcf289c014e9f760a47165f8a84401ccf41d7",
+    "analytic.py": "299c4ab38a202f3f9c452d7333ea5d288512b729ca823d9ae65bc8528163e4fe",
+    "backend.py": "75b0088b6cbfa4eac0f23354b7d623a852276ad9c764ca1cf3edf650480025b2",
+    "budget.py": "cde40b6137b08b0c95eb638dc7151464b7f684e6ec525da5d12283bd885601b8",
+    "cli.py": "3b6e9908a579e86319b8311daa6e8bd085b1e9407dff54d8e7c63fb268959905",
+    "cluster.py": "529fcbae6083a2619fa741440818905315b677f7127610b442d748b422c1a620",
+    "forces.py": "7b2f3b3262612855941f3451d6279286c6999e0bda980400c84ab5069648f24f",
+    "geometry.py": "6ae8d6c0f5fa3843ced0ea5afeeeee87a0737374bae345686feb53d95a56da64",
+    "model.py": "9a19225e1c797368204fbc1ff1e9003ba32bc31b7ebc6fedce1008ad731e00da",
+    "postprocess.py": "17613a60bc8be02c87281c6934977b54cd9ba3a182f6eda66a22d5333b5d3ba7",
+    "quadrature.py": "8676f5c67c141a584ff3d4413f5f131b72bbba0efe613644f186f61dd4833562",
+    "solver.py": "a6abea5feedc4b84a1df2cc2ea8b46de785960274220f1634ab82195d3a21292",
+    "study.py": "8411789a7ccfdecb11df9095b3d2ea41dec76aba898fda5ba8266c7ee382596b",
+    "validation.py": "4e0483830ca8d107c21768668c17010dc815aed4a8d565b99edb128aea05a8c9"
+  },
+  "subsequent_changes_allowed": {
+    "cluster.py": "Expose the standard-library fixed-resolution distance-study manifest and checked bundle preparation; solver/force kernels unchanged.",
+    "study.py": "Add opt-in force-only execution for the initial 80-gap sweep, skipping auxiliary force/convergence evaluations and recording missing diagnostics honestly; preserve the normal diagnostics path.",
+    "postprocess.py": "Keep missing diagnostics unassessed and label the fixed-resolution sweep without implying new convergence/error bars."
+  }
+}

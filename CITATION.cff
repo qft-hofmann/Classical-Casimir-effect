@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "Please cite this software when using its implementation or numerical examples."
+title: "Classical Casimir force: Helmholtz scattering and radiation forces"
+type: software
+authors:
+  - family-names: Hofmann
+    given-names: Arne
+version: 0.1.0
+license: MIT
+repository-code: "https://github.com/qft-hofmann/Classical-Casimir-effect"
+keywords:
+  - Helmholtz scattering
+  - boundary element method
+  - radiation force

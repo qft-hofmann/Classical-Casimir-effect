@@ -1,0 +1,14 @@
+geometry: two_spheres
+boundary: dirichlet
+k: 1.0
+gap: 2.0
+refinement: 1
+direction: [0.0, 1.0, 0.0]
+amplitude: [1.0, 0.0]
+angular_order: 16
+isolated: true
+solver:
+  regular_order: 4
+  singular_order: 4
+  memory_gib: 8.0
+

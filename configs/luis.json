@@ -1,0 +1,5 @@
+{
+  "environment_home_relative": ".conda/envs/bempp",
+  "miniforge_module": "Miniforge3",
+  "requirements_file": "requirements-cluster.lock"
+}
